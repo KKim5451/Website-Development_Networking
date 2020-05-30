@@ -1,2 +1,1 @@
-# Kevin_800989431_ITIS4116
-Network Based App Dvlpment
+This is the initial README file for the course
