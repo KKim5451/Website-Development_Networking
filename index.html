@@ -15,8 +15,7 @@
     <header>
         <!-- Navigation for home page -->
         <div class="right">
-            <h2><a href="x.html">Font resizer</a> | <a href="x.html">Style Switcher</a> | <a href="login.html">Admin Login</a>
-            </h2>
+            <h2><button type="button" onclick="myFont()">Font resizer</button> | <button onclick="document.getElementById('myImage').src='cat0.jpg'">Original Style Switcher</button> | <button onclick="document.getElementById('myImage').src='cat1.jpg'">Style Switcher 1</button> | <button onclick="document.getElementById('myImage').src='cat2.jpg'">Style Switcher 2</button> | <a href="login.html">Admin Login</a></h2>
         </div>
     </header>
     <!-- Navigation for other pages -->
@@ -30,13 +29,19 @@
         </ul>
     </nav>
 
-    <article class="center">
-        <!-- Home page paragraph -->
+    <article id="FontSwitcher" class="center">
+        <!-- Home page paragraph -->   
         <h1>Welcome to the Cat Show!</h1>
         <p>This website is dedicated for appreciating the cats.</p>
         <p>Please take your time to enjoy around this website.</p>
-        <img src="https://c1.staticflickr.com/3/2807/9263427133_1ea1bf0de1_b.jpg" width="400" height="300">
+        <img id="myImage" src="https://c1.staticflickr.com/3/2807/9263427133_1ea1bf0de1_b.jpg" width="400" height="300">
     </article>
+
+    <script>
+        function myFont() {
+            document.getElementById("FontSwitcher").style.font = "italic bold 20px arial,serif";
+        }
+    </script>
 
     <footer>
         <!-- Footers  for reserved rights -->
