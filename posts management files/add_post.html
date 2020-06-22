@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../add.css">
+    <script src="scripts.js"></script>
     <style>
     </style>
 </head>
@@ -22,19 +23,15 @@
     <section>
         <p>Enter names in the fields, then click "Submit" to submit the form:</p>
 
-        <form id="frm1" action="/action_page.php">
-            First name: <input type="text" name="fname"><br>
-            Last name: <input type="text" name="lname"><br><br>
-            <input type="button" onclick="myFunction()" value="Submit">
+        <form method="PROJECT_NAME" onsubmit ="event.preventDefault()">
+            Post Title: <input type="text" name="" id="Title"><br>
+            Post Contents: <input type="text" name="" id="Contents"><br><br>
+            <button id="saveManualButton" onclick ="saveFunction()"> Save</button>
+            <br><br>
+            <input type="file" name="" id="userFile">
+            <button id="saveTXTButton"> Save</button>
         </form>
     </section>
-
-    <script>
-        function myFunction() {
-            document.getElementById("frm1").submit();
-        }
-    </script>
-
 </body>
 
 </html>
